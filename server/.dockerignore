@@ -1,0 +1,10 @@
+.git
+.dockerignore
+.env
+.gitignore
+data-poller.sh
+data.json
+docker-compose.yml
+Dockerfile
+perfreporter
+Makefile
