@@ -14,7 +14,11 @@ func ReadSensorData() (map[string]any, error) {
 
 	var output map[string]any
 
-	json.Unmarshal(bytes, &output)
+	parseErr := json.Unmarshal(bytes, &output)
+
+	if parseErr != nil {
+		return nil, parseErr
+	}
 
 	return output, nil
 }
